@@ -1,0 +1,15 @@
+D:\Joker\Documents\Visual Studio 2017\Repos\TextRedactor\TextRedactor\TextRedactor\bin\Debug\TextRedactor.exe.config
+D:\Joker\Documents\Visual Studio 2017\Repos\TextRedactor\TextRedactor\TextRedactor\bin\Debug\TextRedactor.exe
+D:\Joker\Documents\Visual Studio 2017\Repos\TextRedactor\TextRedactor\TextRedactor\bin\Debug\TextRedactor.pdb
+D:\Joker\Documents\Visual Studio 2017\Repos\TextRedactor\TextRedactor\TextRedactor\obj\Debug\TextRedactor.csprojResolveAssemblyReference.cache
+D:\Joker\Documents\Visual Studio 2017\Repos\TextRedactor\TextRedactor\TextRedactor\obj\Debug\MainWindow.g.cs
+D:\Joker\Documents\Visual Studio 2017\Repos\TextRedactor\TextRedactor\TextRedactor\obj\Debug\App.g.cs
+D:\Joker\Documents\Visual Studio 2017\Repos\TextRedactor\TextRedactor\TextRedactor\obj\Debug\TextRedactor_MarkupCompile.cache
+D:\Joker\Documents\Visual Studio 2017\Repos\TextRedactor\TextRedactor\TextRedactor\obj\Debug\TextRedactor_MarkupCompile.lref
+D:\Joker\Documents\Visual Studio 2017\Repos\TextRedactor\TextRedactor\TextRedactor\obj\Debug\MainWindow.baml
+D:\Joker\Documents\Visual Studio 2017\Repos\TextRedactor\TextRedactor\TextRedactor\obj\Debug\TextRedactor.g.resources
+D:\Joker\Documents\Visual Studio 2017\Repos\TextRedactor\TextRedactor\TextRedactor\obj\Debug\TextRedactor.Properties.Resources.resources
+D:\Joker\Documents\Visual Studio 2017\Repos\TextRedactor\TextRedactor\TextRedactor\obj\Debug\TextRedactor.csproj.GenerateResource.Cache
+D:\Joker\Documents\Visual Studio 2017\Repos\TextRedactor\TextRedactor\TextRedactor\obj\Debug\TextRedactor.csproj.CoreCompileInputs.cache
+D:\Joker\Documents\Visual Studio 2017\Repos\TextRedactor\TextRedactor\TextRedactor\obj\Debug\TextRedactor.exe
+D:\Joker\Documents\Visual Studio 2017\Repos\TextRedactor\TextRedactor\TextRedactor\obj\Debug\TextRedactor.pdb
