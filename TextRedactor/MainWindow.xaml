@@ -5,36 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TextRedactor"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="530" WindowStartupLocation="CenterScreen">
 	<Grid>
 		<Grid.RowDefinitions>
 			<RowDefinition Height="Auto"/>
 			<RowDefinition/>
 		</Grid.RowDefinitions>
 
-		<WrapPanel Grid.Row="0">
-			
+		<WrapPanel Grid.Row="0" ButtonBase.Click="WrapPanel_Click">
+
 			<Border BorderThickness="2" BorderBrush="Black"
 											Margin="5">
 				<DockPanel>
-					<TextBox/>
-					<Button Content="🔼"/>
+					<TextBox Name="tbPath" Width="100"/>
+					<Button Name="bOpen" Content="🔼"/>
 				</DockPanel>
 			</Border>
 
-			<Button Margin="5" Content="save"/>
+			<Button Name="bSaveAs" Width="50" Margin="5" Content="save as"/>
 
-			<CheckBox Margin="5"/>
+			<CheckBox Name="cbAutoSave" Margin="5" Content="Auto save" VerticalAlignment="Center"/>
 
-			<Button Margin="5" Content="cut"/>
-			
-			<Button Margin="5" Content="copy"/>
+			<Button Name="bCut" Width="50" Margin="5" Content="cut"/>
+			<Button Name="bCopy" Width="50" Margin="5" Content="copy"/>
+			<Button Name="bPaste" Width="50" Margin="5" Content="paste"/>
+			<Button Name="bSelectAll" Width="50" Margin="5" Content="select all"/>
 
-			<Button Margin="5" Content="paste"/>
-			
-			<Button Margin="5" Content="select all"/>
-			
 		</WrapPanel>
 
+		<TextBox Name="tbUserText" Grid.Row="1"/>
+ 
 	</Grid>
 </Window>
