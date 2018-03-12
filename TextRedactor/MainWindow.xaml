@@ -5,11 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TextRedactor"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="530" WindowStartupLocation="CenterScreen">
+        Title="MainWindow" Height="350" Width="530" WindowStartupLocation="CenterScreen"
+        Closing="Window_Closing">
 	<Grid>
 		<Grid.RowDefinitions>
 			<RowDefinition Height="Auto"/>
 			<RowDefinition/>
+            <RowDefinition Height="Auto"/>
 		</Grid.RowDefinitions>
 
 		<WrapPanel Grid.Row="0" ButtonBase.Click="WrapPanel_Click">
@@ -34,6 +36,8 @@
 		</WrapPanel>
 
 		<TextBox Name="tbUserText" Grid.Row="1"/>
- 
-	</Grid>
+
+        <Label Name="lAutoSave" Grid.Row="2" Height="30" Background="AliceBlue"/>
+
+    </Grid>
 </Window>

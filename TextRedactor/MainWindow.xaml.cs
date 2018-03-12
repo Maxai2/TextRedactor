@@ -50,6 +50,7 @@ namespace TextRedactor
         private void dispatcherTimer_Tick(object sender, EventArgs e)
         {
             File.WriteAllText(tbPath.Text, tbUserText.Text);
+            lAutoSave.Content = "Autosave: " + DateTime.Now.ToUniversalTime();
         }
 
         private void WrapPanel_Click(object sender, RoutedEventArgs e)
@@ -128,10 +129,32 @@ namespace TextRedactor
                 tbUserText.Text = tbUserText.Text.Remove(tbUserText.SelectionStart, tbUserText.SelectionLength);
             }
             else
-            if (controll == bSelectAll) 
+            if (controll == bSelectAll)
             {
                 tbUserText.Focus();
                 tbUserText.SelectAll();
+            }
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (tbUserText.Text == String.Empty)
+                return;
+
+            MessageBoxResult result = MessageBox.Show("Do you want to save file?", "Warning!", MessageBoxButton.YesNoCancel);
+
+            switch (result)
+            {
+                case MessageBoxResult.None:
+                case MessageBoxResult.Cancel:
+                    e.Cancel = true;
+                    break;
+                case MessageBoxResult.Yes:
+                    if (saveFileDialog.ShowDialog() == true)
+                        File.WriteAllText(saveFileDialog.FileName, tbUserText.Text);
+                    break;
+                case MessageBoxResult.No:
+                    break;
             }
         }
     }
