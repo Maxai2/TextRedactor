@@ -13,8 +13,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
-using System.Windows.Shapes;
-
+using System.Windows.Shapes; 
+//------------------------------------------------------------------------------
 namespace TextRedactor
 {
     /// <summary>
@@ -30,7 +30,7 @@ namespace TextRedactor
         OpenFileDialog openFileDialog;
 
         bool firstSave = false;
-
+        //------------------------------------------------------------------------------
         public MainWindow()
         {
             InitializeComponent();
@@ -46,13 +46,13 @@ namespace TextRedactor
             dispatcherTimer.Tick += new EventHandler(dispatcherTimer_Tick);
             dispatcherTimer.Interval = new TimeSpan(0, 0, 10);
         }
-
+        //------------------------------------------------------------------------------
         private void dispatcherTimer_Tick(object sender, EventArgs e)
         {
             File.WriteAllText(tbPath.Text, tbUserText.Text);
             lAutoSave.Content = "Autosave: " + DateTime.Now.ToUniversalTime();
         }
-
+        //------------------------------------------------------------------------------
         private void WrapPanel_Click(object sender, RoutedEventArgs e)
         {
             var controll = e.Source;
@@ -135,7 +135,7 @@ namespace TextRedactor
                 tbUserText.SelectAll();
             }
         }
-
+        //------------------------------------------------------------------------------
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             if (tbUserText.Text == String.Empty)
@@ -159,3 +159,4 @@ namespace TextRedactor
         }
     }
 }
+//------------------------------------------------------------------------------
