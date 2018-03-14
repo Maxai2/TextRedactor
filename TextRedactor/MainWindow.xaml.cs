@@ -53,7 +53,7 @@ namespace TextRedactor
             lAutoSave.Content = "Autosave: " + DateTime.Now.ToUniversalTime();
         }
         //------------------------------------------------------------------------------
-        private void WrapPanel_Click(object sender, RoutedEventArgs e)
+        private void WrapPanel_Click(object sender, RoutedEventArgs e) //It is possible to use it but it is better to separate separately if the elements are not typical
         {
             var controll = e.Source;
 
